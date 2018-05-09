@@ -1,4 +1,4 @@
-# url-checker
+# hn-api
 A simple microservice to parse HackerNews page to JSON.
 
 
