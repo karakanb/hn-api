@@ -1,0 +1,25 @@
+{
+  "name": "hn-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "micro",
+    "dev": "micro-dev"
+  },
+  "dependencies": {
+    "hn-parser": "^0.1.0",
+    "micro": "latest"
+  },
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "micro-dev": "^2.2.2"
+  },
+  "now": {
+    "alias": "hn-api"
+  }
+}
