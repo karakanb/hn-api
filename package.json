@@ -8,8 +8,9 @@
     "dev": "micro-dev"
   },
   "dependencies": {
-    "hn-parser": "^0.1.0",
-    "micro": "latest"
+    "hn-parser": "^0.1.1",
+    "micro": "latest",
+    "micro-cacheable": "^2.0.1"
   },
   "env": {
     "NODE_ENV": "production"

@@ -1,7 +1,8 @@
 const https = require('https');
-const parser = require('hn-parser')
+const parser = require('hn-parser');
+const cache = require('micro-cacheable');
 
-module.exports = (request, response) => {
+const responseFunction = (request, response) => {
 
   // Set the request header and validate in case of invalid inputs.
   response.setHeader('Content-Type', 'application/json');
@@ -46,3 +47,5 @@ const failure = (message) => {
     message: message
   });
 }
+
+module.exports = cache(5 * 1000, responseFunction)
