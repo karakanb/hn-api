@@ -10,7 +10,8 @@
   "dependencies": {
     "hn-parser": "^0.1.1",
     "micro": "latest",
-    "micro-cacheable": "^2.0.1"
+    "micro-cacheable": "^2.0.1",
+    "micro-cors": "^0.1.0"
   },
   "env": {
     "NODE_ENV": "production"

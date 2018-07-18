@@ -1,6 +1,7 @@
 const https = require('https');
 const parser = require('hn-parser');
 const cache = require('micro-cacheable');
+const cors = require('micro-cors')();
 
 const responseFunction = (request, response) => {
 
@@ -48,4 +49,4 @@ const failure = (message) => {
   });
 }
 
-module.exports = cache(5 * 1000, responseFunction)
+module.exports = cors(cache(5 * 1000, responseFunction))
